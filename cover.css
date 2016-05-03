@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  font-family: 'Lato', 'Ubuntu Condensed', 'Helvetica Neue', sans-serif;
+  font-family: 'Agipo', Helvetica Neue, sans-serif;
 }
 body {
   color: #fff;
@@ -161,4 +161,17 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+/*
+ * Font
+ */
+
+ @font-face {
+  font-family: 'Agipo';
+  src: url('fonts/agipo/agipo.eot') format('embedded-opentype'), /* IE9 */
+       url('fonts/agipo/agipo.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/agipo/agipo.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/agipo/agipo.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/agipo/agipo.svg') format('svg'); /* Legacy iOS */
 }
