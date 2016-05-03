@@ -2,11 +2,11 @@
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+ /* Links */
+ a,
+ a:focus,
+ a:hover {
+  color: #000;
 }
 
 /* Custom default button */
@@ -24,26 +24,22 @@ a:hover {
  * Base structure
  */
 
-html,
-body {
+ html,
+ body {
   height: 100%;
-  background-color: #333;
+  background-color: #FFF;
   font-family: 'Agipo', Helvetica Neue, sans-serif;
 }
 body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  color: #000;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -56,14 +52,14 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding: 20px;
 }
 
 
 /*
  * Header
  */
-.masthead-brand {
+ .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -110,7 +106,7 @@ body {
  * Cover
  */
 
-.cover {
+ .cover {
   padding: 0 20px;
 }
 .cover .btn-lg {
@@ -123,17 +119,16 @@ body {
  * Footer
  */
 
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
+ .mastfoot {
+
+ }
 
 
 /*
  * Affix and center
  */
 
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -143,10 +138,7 @@ body {
     position: fixed;
     bottom: 0;
   }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
+
   /* Handle the widths */
   .masthead,
   .mastfoot,
@@ -159,7 +151,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    // width: 700px;
   }
 }
 
@@ -170,8 +162,46 @@ body {
  @font-face {
   font-family: 'Agipo';
   src: url('fonts/agipo/agipo.eot') format('embedded-opentype'), /* IE9 */
-       url('fonts/agipo/agipo.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/agipo/agipo.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/agipo/agipo.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/agipo/agipo.svg') format('svg'); /* Legacy iOS */
+  url('fonts/agipo/agipo.woff2') format('woff2'), /* Super Modern Browsers */
+  url('fonts/agipo/agipo.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts/agipo/agipo.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('fonts/agipo/agipo.svg') format('svg'); /* Legacy iOS */
+}
+
+
+h1 {
+  font-size: 128px;
+  font-size: 10vw;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+.lead {
+  font-size: 32px;
+  font-size: 3vw;
+  max-width: 50%;
+}
+
+.mastfoot p {
+  font-size: 32px;
+  font-size: 3vw;
+}
+
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 128px;
+    font-size: 8vw;
+  }
+
+  .lead {
+    font-size: 32px;
+    font-size: 2vw;
+  }
+
+  .mastfoot p {
+    font-size: 32px;
+    font-size: 2vw;
+  }
+
 }
