@@ -66,6 +66,11 @@ body {
   margin-bottom: 10px;
 }
 
+ .cover-heading div{
+     float: left;
+     display: inline-block;
+ }
+
 .masthead-nav > li {
   display: inline-block;
 }
