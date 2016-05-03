@@ -37,7 +37,7 @@
         $footer = $('.mastfoot').find('.inner');
 
         TweenMax.set($headline,{visibility:'hidden'});
-        TweenMax.set($p,{autoAlpha:0, x:'100%', y:'100%', scale:5});
+        TweenMax.set($p,{autoAlpha:0, x:'158%', y:'115%', scale:5});
         TweenMax.set($lead1,{autoAlpha:0, y:'20%'});
         TweenMax.set($lead2,{autoAlpha:0, y:'20%'});
         TweenMax.set($footer,{autoAlpha:0, y:'20%'});
