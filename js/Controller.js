@@ -44,7 +44,7 @@
 
         var tl = new TimelineMax({delay:0.25, paused:false})
             .to($p, 0.5, {autoAlpha:1, ease:Power1.easeOut})
-            .to($p, 0.5, {delay:0.5, scale:1, x:'0%', y:'0%', ease:Power1.easeOut})
+            .to($p, 0.3, {delay:0.5, scale:1, x:'0%', y:'0%', ease:Sine.easeInOut})
             .staggerTo($headline , 0.2, {delay: 0.1, visibility:'visible'},0.05,'fade')
             .to($lead1, 0.3, {y:'0%', autoAlpha:1, ease:Power1.easeOut},'fade+=0.75')
             .to($lead2, 0.3, {y:'0%', autoAlpha:1, ease:Power1.easeOut},'fade+=1')
