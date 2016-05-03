@@ -36,7 +36,7 @@
         <div class="cover-container">
 
           <div class="inner cover">
-            <h1 class="cover-heading">Prototype<br>Fund</h1>
+            <h1 class="cover-heading"><span>P</span><span>r</span><span>o</span><span>t</span><span>o</span><span>t</span><span>y</span><span>p</span><span>e</span><br><span>F</span><span>u</span><span>n</span><span>d</span></h1>
             <p class="lead">1.2 Millionen für Open Source Projekte rund um die Nutzung und Analyse von Daten.</p>
             <p class="lead">
               Coming soon.
@@ -60,8 +60,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<!--     <script src="../../dist/js/bootstrap.min.js"></script>
- -->    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<!--     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
- -->  </body>
+    <script src="js/vendor/TweenMax.min.js"></script>
+    <script src="js/Controller.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            var controller = new Controller($);
+            controller.init();
+        });
+    </script>
+
+  </body>
 </html>
