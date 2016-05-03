@@ -14,8 +14,19 @@
 
 
     Controller.prototype.init = function($slide){
-        $headline = $('.cover-heading').find('span');
 
+        var h = $('.cover-heading');
+        var headline = h.text().split('');
+        h.empty();
+
+        for(var a=0;a<headline.length;++a){
+            var char = headline[a];
+            h.html(h.html()+'<span>'+char+'</span>')
+            if(a==8)h.html(h.html()+'<br>');
+        }
+        console.log(headline);
+
+        $headline = h.find('span');
         $lead1 = $('.lead').first();
         $lead2 = $('.lead').last();
         $footer = $('.mastfoot').find('.inner');
