@@ -36,6 +36,7 @@
         <div class="cover-container">
 
           <div class="inner cover">
+            <canvas id="logoCanvas" resize></canvas>
             <h1 class="cover-heading">Prototype<br>Fund</h1>
             <p class="lead">1.2 Millionen für Open Source Projekte rund um die Nutzung und Analyse von Daten.</p>
             <p class="lead">
@@ -58,10 +59,71 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/paper-full.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<!--     <script src="../../dist/js/bootstrap.min.js"></script>
- -->    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<!--     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
- -->  </body>
+
+  <script type="text/paperscript" canvas="logoCanvas">
+    
+    currentHit = false;
+
+    var SVGoptions = { expandShapes : true , 
+                       onLoad: function (){
+                        onSVGLoadedHandler();
+                       }};
+
+    project.importSVG("logo.svg" , SVGoptions );
+
+    function onSVGLoadedHandler() {
+          
+      svg = project.activeLayer.children.Ebene_1;
+
+      // svg.strokeColor = new Color(0, 0, 0);
+      svg.fillColor = new Color(0, 0, 0,0);
+      svg.selectedColor = new Color (0,0,0);
+      
+      svg.fullySelected = true;
+      
+      // svgSegments = svg.children[0].segments;
+
+    };
+
+    function onMouseDrag(event) {
+
+      if(project.currentHit){
+        if(project.currentHit.type == "segment" ) {
+          project.currentHit.segment.point += event.delta;
+        }
+
+        if(project.currentHit.type == "handle-in" ) {
+          project.currentHit.segment.handleIn += event.delta;
+        }
+
+        if(project.currentHit.type == "handle-out" ) {
+          project.currentHit.segment.handleOut += event.delta;
+        }
+      }
+
+    }
+
+    function onMouseDown(event) {
+
+      var options = {
+       tolerance : 10,
+       handles : true,
+       segments: true
+      }
+
+      project.currentHit = project.hitTest(event.point,options);       
+      
+    }
+
+    function onMouseUp(event) {
+      project.currentHit = false;
+    }
+
+  </script>
+
+<body>
 </html>
