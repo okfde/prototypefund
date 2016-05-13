@@ -36,6 +36,10 @@ body {
   margin: 4%;
 }
 
+label {
+  font-weight: normal;
+}
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   width: 100%;
@@ -142,8 +146,8 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
-    bottom: 0;
+/*    position: fixed;
+*/    bottom: 0;
   }
 
   /* Handle the widths */
@@ -184,10 +188,17 @@ h1 {
 }
 
 .lead {
-  font-size: 32px;
-  font-size: 3vw;
   max-width: 50%;
 }
+
+.lead, 
+#mc_embed_signup,
+#mc_embed_signup h2 {
+  font-size: 32px;
+  font-size: 3vw;
+}
+
+
 
 .mastfoot p {
   font-size: 32px;
@@ -201,7 +212,9 @@ h1 {
     font-size: 8vw;
   }
 
-  .lead {
+.lead, 
+#mc_embed_signup,
+#mc_embed_signup h2  {
     font-size: 32px;
     font-size: 2vw;
   }

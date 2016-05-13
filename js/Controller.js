@@ -34,12 +34,14 @@
         $headline = h.find('span');
         $lead1 = $('.lead').first();
         $lead2 = $('.lead').last();
+        $signup = $('#mc_embed_signup');
         $footer = $('.mastfoot').find('.inner');
 
         TweenMax.set($headline,{visibility:'hidden'});
         TweenMax.set($p,{autoAlpha:0, x:'158%', y:'115%', scale:5});
         TweenMax.set($lead1,{autoAlpha:0, y:'20%'});
         TweenMax.set($lead2,{autoAlpha:0, y:'20%'});
+        TweenMax.set($signup,{autoAlpha:0, y:'20%'});
         TweenMax.set($footer,{autoAlpha:0, y:'20%'});
 
         var tl = new TimelineMax({delay:0.25, paused:false})
@@ -48,7 +50,8 @@
             .staggerTo($headline , 0.2, {delay: 0.1, visibility:'visible'},0.05,'fade')
             .to($lead1, 0.3, {y:'0%', autoAlpha:1, ease:Power1.easeOut},'fade+=0.75')
             .to($lead2, 0.3, {y:'0%', autoAlpha:1, ease:Power1.easeOut},'fade+=1')
-            .to($footer, 0.3, {y:'0%', autoAlpha:1, ease:Power1.easeOut},'fade+=1.25')
+            .to($signup, 0.3, {y:'0%', autoAlpha:1, ease:Power1.easeOut},'fade+=1.25')
+            .to($footer, 0.3, {y:'0%', autoAlpha:1, ease:Power1.easeOut},'fade+=1.50')
 
     };
 
