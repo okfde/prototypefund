@@ -73,36 +73,71 @@
                         onSVGLoadedHandler();
                        }};
 
-    project.importSVG("logo.svg" , SVGoptions );
+    project.importSVG("p.svg" , SVGoptions );
 
     function onSVGLoadedHandler() {
-          
-      svg = project.activeLayer.children.Ebene_1;
+      
+      svgs = new Group();
 
-      // svg.strokeColor = new Color(0, 0, 0);
+      svg = project.activeLayer.children.p;
+
+      svg.strokeColor = new Color(0, 0, 0);
       svg.fillColor = new Color(0, 0, 0,0);
+      //svg.fillColor ="blue";
       svg.selectedColor = new Color (0,0,0);
+      //svg.fullySelected = true;
       
-      svg.fullySelected = true;
+      svg2 = svg.clone();
+      //svg2.fullySelected = true;
+      svg2.strokeColor = new Color(0,0,0);
+      svg2.position = new Point(150,150);
+      svg2.fillColor = new Color(0, 0, 0,0);
+
+      svg2.blendMode = "multiply";
+
+      svgs.addChild(svg);
+      svgs.addChild(svg2);
       
-      // svgSegments = svg.children[0].segments;
+      // Group for the pseudo 3D Elements
+      pseudo3D();
 
     };
+
+    function pseudo3D() {
+
+        path1 = svg.children.p_path.children[0].segments;
+        path2 = svg2.children.p_path.children[0].segments;
+        
+        lines = new Group();
+
+        for (var i = path1.length - 1; i >= 0; i--) {
+          pseudo3Dconnect = new Path(path1[i].point,path2[i].point);
+          pseudo3Dconnect.strokeColor = "black";
+          lines.addChild(pseudo3Dconnect);
+        }
+    
+    }
+
+
 
     function onMouseDrag(event) {
 
       if(project.currentHit){
         if(project.currentHit.type == "segment" ) {
           project.currentHit.segment.point += event.delta;
+          
+          lines.remove();
+          pseudo3D();
+        
         }
 
-        if(project.currentHit.type == "handle-in" ) {
-          project.currentHit.segment.handleIn += event.delta;
-        }
+        // if(project.currentHit.type == "handle-in" ) {
+        //   project.currentHit.segment.handleIn += event.delta;
+        // }
 
-        if(project.currentHit.type == "handle-out" ) {
-          project.currentHit.segment.handleOut += event.delta;
-        }
+        // if(project.currentHit.type == "handle-out" ) {
+        //   project.currentHit.segment.handleOut += event.delta;
+        // }
       }
 
     }
@@ -115,7 +150,7 @@
        segments: true
       }
 
-      project.currentHit = project.hitTest(event.point,options);       
+      project.currentHit = svgs.hitTest(event.point,options);       
       
     }
 
