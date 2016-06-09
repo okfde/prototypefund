@@ -20,6 +20,10 @@
         paperView = new PaperView(this);
         paperView.init();
 
+        $('.resetCanvas').click(function(){
+            paperView.resetToDefault();
+        });
+
 
     };
 

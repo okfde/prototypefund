@@ -36,12 +36,7 @@
         <div class="cover-container">
 
           <div class="inner cover">
-              <svg version="1.1" id="svg-p" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="54px" height="36px" viewBox="0 0 54 36" enable-background="new 0 0 54 36" xml:space="preserve">
-<path id="XMLID_625_" fill="#D6ED00" d="M32,0l4.1,0.5l5.1,8.6l-5.1,9.1c0,0-5.6,1.5-7.8,2h-5V34l5,0.6L28.3,36l-8.2-0.1L12.9,36
-	l-0.2-1.4l4-0.6V1.9l-4-0.5L12.9,0H32z M23.4,18.4H27l7.2-4.8L36,9.7L34.2,6l-6.7-4.5l-4.2,0.4V18.4z"/>
-</svg>
-            <canvas id="paperCanvas"></canvas>
+            <canvas id="paperCanvas" resize></canvas>
             <h1 class="cover-heading">Prototype<br>Fund</h1>
             <p class="lead">1.2 Millionen für Open Source Projekte rund um die Nutzung und Analyse von Daten.</p>
             <p class="lead">
@@ -51,7 +46,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Ein Projekt der <a href="https://okfn.de">Open Knowledge Foundation</a>.</p>
+              <p>Ein Projekt der <a href="#" class="resetCanvas">Open Knowledge Foundation</a>.</p>
             </div>
           </div>
         </div>
@@ -62,6 +57,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/vendor/greensock/TweenMax.min.js"></script>
     <script src="js/vendor/paper/paper-full.min.js"></script>
     <script src="js/vendor/logger.min.js"></script>
     <script src="js/app/PaperView.js"></script>
