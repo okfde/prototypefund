@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc34b6e4-6786-496b-936d-afa46b12c9a2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/Controller.js" afterPath="$PROJECT_DIR$/js/app/Controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test 2.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app/PaperView.js" afterPath="$PROJECT_DIR$/js/app/PaperView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/p.svg" afterPath="$PROJECT_DIR$/p.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="prototypefund.iws" />
@@ -30,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.277778" vertical-offset="782" max-vertical-offset="2241">
-              <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.4" vertical-offset="1431" max-vertical-offset="2241">
+              <caret line="65" column="93" selection-start-line="65" selection-start-column="93" selection-end-line="65" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaperView.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PaperView.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app/PaperView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64893615" vertical-offset="10899" max-vertical-offset="14094">
-              <caret line="429" column="27" selection-start-line="429" selection-start-column="27" selection-end-line="429" selection-end-column="45" />
+            <state vertical-scroll-proportion="-11.172414" vertical-offset="0" max-vertical-offset="12663">
+              <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
               <folding>
                 <element signature="e#0#92#0" expanded="false" />
               </folding>
@@ -83,8 +83,8 @@
         <option value="$PROJECT_DIR$/js/utils/MailchimpSignup.js" />
         <option value="$PROJECT_DIR$/js/Controller.js" />
         <option value="$PROJECT_DIR$/cover.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/app/Controller.js" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/app/PaperView.js" />
       </list>
     </option>
@@ -476,14 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.277778" vertical-offset="782" max-vertical-offset="2241">
-          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/app/Controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="166" max-vertical-offset="1026">
@@ -494,11 +486,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app/PaperView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64893615" vertical-offset="10899" max-vertical-offset="14094">
-          <caret line="429" column="27" selection-start-line="429" selection-start-column="27" selection-end-line="429" selection-end-column="45" />
+        <state vertical-scroll-proportion="-11.172414" vertical-offset="0" max-vertical-offset="12663">
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
           <folding>
             <element signature="e#0#92#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4" vertical-offset="1431" max-vertical-offset="2241">
+          <caret line="65" column="93" selection-start-line="65" selection-start-column="93" selection-end-line="65" selection-end-column="93" />
+          <folding />
         </state>
       </provider>
     </entry>
